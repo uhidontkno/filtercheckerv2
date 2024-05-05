@@ -1,5 +1,7 @@
 {
   "compilerOptions": {
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
     // Enable latest features
     "lib": ["ESNext", "DOM"],
     "target": "ESNext",
