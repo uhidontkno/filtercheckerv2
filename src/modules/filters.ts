@@ -27,7 +27,7 @@ async function lightspeed(url:string) {
                 'x-api-key': 'onEkoztnFpTi3VG7XQEq6skQWN3aFm3h'
             },
             // graphQL vvv
-            "body": `{{"query":"\\nquery getDeviceCategorization($itemA: CustomHostLookupInput!, $itemB: CustomHostLookupInput!){{\\n  a: custom_HostLookup(item: $itemA) {{ cat}}\\n  b: custom_HostLookup(item: $itemB) {{ cat   \\n  }}\\n}}","variables":{{"itemA":{{"hostname":"{url}"}}, "itemB":{{"hostname":"{url}"}}}}}}`
+            "body": `{"query":"\\nquery getDeviceCategorization($itemA: CustomHostLookupInput!, $itemB: CustomHostLookupInput!){\\n  a: custom_HostLookup(item: $itemA) { cat}\\n  b: custom_HostLookup(item: $itemB) { cat   \\n  }\\n}","variables":{"itemA":{"hostname":"{url}"}, "itemB":{"hostname":"{url}"}}}`
         }
     );
     let body= await res.json();
@@ -41,24 +41,24 @@ async function fortiguard(url:string) {
     let res = await fetch("https://www.fortiguard.com/learnmore/dns",{
         "method":"POST",
         "headers": {
-            'accept':
+            'Accept':
             '*/*',
-            'accept-language':
+            'Accept-Language':
             'en-US,en;q=0.9',
-            'authority':
+            'Authority':
             'www.fortiguard.com',
-            'content-type':
+            'Content-Type':
             'application/json;charset=UTF-8',
-            'cookie':
+            'Cookie':
             'cookiesession1=678A3E0F33B3CB9D7BEECD2B8A5DD036; privacy_agreement=true',
-            'origin':
+            'Origin':
             'https://www.fortiguard.com',
-            'referer':
+            'Referer':
             'https://www.fortiguard.com/services/sdns',
-            'user-agent':
+            'User-Agent':
             'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
         },
-        "body": `{{"value": "${url}", "version": 9}}`
+        "body": `{"value": "${url}", "version": 9}`
     })
     let rJson = await res.json();
     return rJson["dns"]["categoryname"]
@@ -77,3 +77,6 @@ async function palo(domain: string): Promise<any> {
         return ''; // Return an empty string in case of error
     }
 }
+
+
+export default { palo,fortiguard,lightspeed,lightspeedCategorize } 
