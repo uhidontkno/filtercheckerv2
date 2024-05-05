@@ -58,7 +58,25 @@ export default class FilterCheckCommand extends Command {
         let formatted = ["Category: " + results[0],`LS Filter: ${results[1][0]}\nLS Rocket: ${results[1][1]}`,`Risk: ${results[2][1]}\nCategory: ${results[2][0].trim().replace(/^\s*$(?:\r\n?|\n)/gm,"")}`]
         embed.addFields({name:"FortiGuard",value:formatted[0]},{name:"Lightspeed",value:formatted[1]},{name:"Palo Alto",value:formatted[2]})
     } else {
-        // todo
+        let results;
+        // @ts-ignore
+        switch (ctx.options.filter) {
+            case "palo":
+                results = await filters.palo(url);
+                embed.addFields({name:"Palo Alto",value:`Risk: ${results[1]}\nCategory: ${results[0].trim().replace(/^\s*$(?:\r\n?|\n)/gm,"")}`})
+                break;
+            case "lightspeed":
+                results = await filters.lightspeed(url);
+                embed.addFields({name:"Lightspeed",value:`LS Filter: ${results[0]}\nLS Rocket: ${results[1]}`})
+                break;
+            case "fortiguard":
+                results = await filters.fortiguard(url);
+                embed.addFields({name:"FortiGuard",value:"Category: " + results})
+                break;
+            default:
+                embed.setDescription("No filter passed")
+                break;
+        }
     }
     
     await ctx.editOrReply({
