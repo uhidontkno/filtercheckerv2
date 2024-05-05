@@ -99,4 +99,6 @@ Category: Streaming-Media
 ```
 
 ----
-<img src="readme/lyrth.png" width="480px">
+<img src="readme/lyrth.png" width="720px">
+<br><br>
+<i>FilterChecker V2 is licensed under the Lesser GNU Public License version 2.1.</i>
