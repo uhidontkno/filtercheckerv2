@@ -1,0 +1,733 @@
+[
+    {
+      "CategoryNumber": 1,
+      "CategoryName": "local-allow"
+  
+    },
+    {
+      "CategoryNumber": 2,
+      "CategoryName": "local-block"
+  
+    },
+    {"CategoryNumber": 3,"CategoryName": "ads"},
+    {
+      "CategoryNumber": 4,
+      "CategoryName": "adult"
+  
+    },
+    {
+      "CategoryNumber": 5,
+      "CategoryName": "audio-video"
+  
+    },
+    {
+      "CategoryNumber": 6,
+      "CategoryName": "business"
+  
+    },
+    {
+      "CategoryNumber": 7,
+      "CategoryName": "errors"
+  
+    },
+    {
+      "CategoryNumber": 8,
+      "CategoryName": "drugs"
+  
+    },
+    {
+      "CategoryNumber": 9,
+      "CategoryName": "education"
+  
+    },
+    {
+      "CategoryNumber": 10,
+      "CategoryName": "business.finance"
+  
+    },
+    {
+      "CategoryNumber": 11,
+      "CategoryName": "forums"
+  
+    },
+    {
+      "CategoryNumber": 12,
+      "CategoryName": "gambling"
+  
+    },
+    {
+      "CategoryNumber": 13,
+      "CategoryName": "games"
+  
+    },
+    {
+      "CategoryNumber": 14,
+      "CategoryName": "general"
+  
+    },
+    {
+      "CategoryNumber": 15,
+      "CategoryName": "government"
+  
+    },
+    {
+      "CategoryNumber": 16,
+      "CategoryName": "security.hacking"
+  
+    },
+    {
+      "CategoryNumber": 17,
+      "CategoryName": "violence.hate"
+  
+    },
+    {
+      "CategoryNumber": 18,
+      "CategoryName": "business.jobs"
+  
+    },
+    {
+      "CategoryNumber": 19,
+      "CategoryName": "forums.mail"
+  
+    },
+    {
+      "CategoryNumber": 20,
+      "CategoryName": "news"
+  
+    },
+    {
+      "CategoryNumber": 21,
+      "CategoryName": "porn"
+  
+    },
+    {
+      "CategoryNumber": 22,
+      "CategoryName": "porn.de"
+  
+    },
+    {
+      "CategoryNumber": 23,
+      "CategoryName": "porn.es"
+  
+    },
+    {
+      "CategoryNumber": 24,
+      "CategoryName": "porn.fr"
+  
+    },
+    {
+      "CategoryNumber": 25,
+      "CategoryName": "porn.it"
+  
+    },
+    {
+      "CategoryNumber": 26,
+      "CategoryName": "porn.jp"
+  
+    },
+    {
+      "CategoryNumber": 27,
+      "CategoryName": "porn.nl"
+  
+    },
+    {
+      "CategoryNumber": 28,
+      "CategoryName": "security.proxy"
+  
+    },
+    {
+      "CategoryNumber": 29,
+      "CategoryName": "shopping"
+  
+    },
+    {
+      "CategoryNumber": 30,
+      "CategoryName": "sports"
+  
+    },
+    {
+      "CategoryNumber": 31,
+      "CategoryName": "suspicious"
+  
+    },
+    {
+      "CategoryNumber": 32,
+      "CategoryName": "violence"
+  
+    },
+    {
+      "CategoryNumber": 33,
+      "CategoryName": "security.warez"
+  
+    },
+    {
+      "CategoryNumber": 34,
+      "CategoryName": "directory"
+  
+    },
+    {
+      "CategoryNumber": 35,
+      "CategoryName": "ads.popup-ads"
+  
+    },
+    {
+      "CategoryNumber": 36,
+      "CategoryName": "travel"
+  
+    },
+    {
+      "CategoryNumber": 37,
+      "CategoryName": "automobile"
+  
+    },
+    {
+      "CategoryNumber": 38,
+      "CategoryName": "forums.newsgroups"
+  
+    },
+    {
+      "CategoryNumber": 39,
+      "CategoryName": "forums.personals"
+  
+    },
+    {
+      "CategoryNumber": 40,
+      "CategoryName": "humor"
+  
+    },
+    {
+      "CategoryNumber": 41,
+      "CategoryName": "education.lifestyles"
+  
+    },
+    {
+      "CategoryNumber": 42,
+      "CategoryName": "alcohol"
+  
+    },
+    {
+      "CategoryNumber": 43,
+      "CategoryName": "family.health"
+  
+    },
+    {
+      "CategoryNumber": 44,
+      "CategoryName": "education.science"
+  
+    },
+    {
+      "CategoryNumber": 45,
+      "CategoryName": "entertainment"
+  
+    },
+    {
+      "CategoryNumber": 46,
+      "CategoryName": "kids_and_teens"
+  
+    },
+    {
+      "CategoryNumber": 47,
+      "CategoryName": "education.arts"
+  
+    },
+    {
+      "CategoryNumber": 48,
+      "CategoryName": "education.literature"
+  
+    },
+    {
+      "CategoryNumber": 49,
+      "CategoryName": "music"
+  
+    },
+    {
+      "CategoryNumber": 50,
+      "CategoryName": "education.music"
+  
+    },
+    {
+      "CategoryNumber": 51,
+      "CategoryName": "microsoft"
+  
+    },
+    {
+      "CategoryNumber": 52,
+      "CategoryName": "ads.banner-ads"
+  
+    },
+    {
+      "CategoryNumber": 53,
+      "CategoryName": "ads.html-ads"
+  
+    },
+    {
+      "CategoryNumber": 54,
+      "CategoryName": "ads.javascript-ads"
+  
+    },
+    {
+      "CategoryNumber": 55,
+      "CategoryName": "spam"
+  
+    },
+    {
+      "CategoryNumber": 56,
+      "CategoryName": "ham"
+  
+    },
+    {
+      "CategoryNumber": 57,
+      "CategoryName": "computers"
+  
+    },
+    {
+      "CategoryNumber": 58,
+      "CategoryName": "family.religion"
+  
+    },
+    {
+      "CategoryNumber": 59,
+      "CategoryName": "world"
+  
+    },
+    {
+      "CategoryNumber": 60,
+      "CategoryName": "forums.p2p"
+  
+    },
+    {
+      "CategoryNumber": 61,
+      "CategoryName": "forums.im"
+  
+    },
+    {
+      "CategoryNumber": 62,
+      "CategoryName": "security.spyware"
+  
+    },
+    {
+      "CategoryNumber": 63,
+      "CategoryName": "security.virus"
+  
+    },
+    {
+      "CategoryNumber": 64,
+      "CategoryName": "security.test"
+  
+    },
+    {
+      "CategoryNumber": 65,
+      "CategoryName": "security.phishing"
+  
+    },
+    {
+      "CategoryNumber": 66,
+      "CategoryName": "weapons"
+  
+    },
+    {
+      "CategoryNumber": 67,
+      "CategoryName": "access-denied"
+  
+    },
+    {
+      "CategoryNumber": 68,
+      "CategoryName": "law"
+  
+    },
+    {
+      "CategoryNumber": 69,
+      "CategoryName": "kids_and_teens.chat"
+  
+    },
+    {
+      "CategoryNumber": 70,
+      "CategoryName": "adult.language"
+  
+    },
+    {
+      "CategoryNumber": 71,
+      "CategoryName": "forums.blogs"
+  
+    },
+    {
+      "CategoryNumber": 72,
+      "CategoryName": "security"
+  
+    },
+    {
+      "CategoryNumber": 73,
+      "CategoryName": "business.real_estate"
+  
+    },
+    {
+      "CategoryNumber": 74,
+      "CategoryName": "education.games"
+  
+    },
+    {
+      "CategoryNumber": 75,
+      "CategoryName": "education.social_science"
+  
+    },
+    {
+      "CategoryNumber": 76,
+      "CategoryName": "family.food"
+  
+    },
+    {
+      "CategoryNumber": 77,
+      "CategoryName": "kids_and_teens.animals"
+  
+    },
+    {
+      "CategoryNumber": 78,
+      "CategoryName": "shopping.spam"
+  
+    },
+    {
+      "CategoryNumber": 79,
+      "CategoryName": "society"
+  
+    },
+    {
+      "CategoryNumber": 80,
+      "CategoryName": "education.sex"
+  
+    },
+    {
+      "CategoryNumber": 81,
+      "CategoryName": "shopping.auctions"
+  
+    },
+    {
+      "CategoryNumber": 82,
+      "CategoryName": "sports.fantasy"
+  
+    },
+    {
+      "CategoryNumber": 83,
+      "CategoryName": "hobby"
+  
+    },
+    {
+      "CategoryNumber": 84,
+      "CategoryName": "sports.youth"
+  
+    },
+    {
+      "CategoryNumber": 85,
+      "CategoryName": "search"
+  
+    },
+    {
+      "CategoryNumber": 86,
+      "CategoryName": "world.de"
+  
+    },
+    {
+      "CategoryNumber": 87,
+      "CategoryName": "world.es"
+  
+    },
+    {
+      "CategoryNumber": 88,
+      "CategoryName": "world.fr"
+  
+    },
+    {
+      "CategoryNumber": 89,
+      "CategoryName": "world.it"
+  
+    },
+    {
+      "CategoryNumber": 90,
+      "CategoryName": "world.jp"
+  
+    },
+    {
+      "CategoryNumber": 91,
+      "CategoryName": "world.nl"
+  
+    },
+    {
+      "CategoryNumber": 92,
+      "CategoryName": "world.pt"
+  
+    },
+    {
+      "CategoryNumber": 93,
+      "CategoryName": "world.ru"
+  
+    },
+    {
+      "CategoryNumber": 94,
+      "CategoryName": "porn.illicit"
+  
+    },
+    {
+      "CategoryNumber": 95,
+      "CategoryName": "family"
+  
+    },
+    {
+      "CategoryNumber": 96,
+      "CategoryName": "society.politics"
+  
+    },
+    {
+      "CategoryNumber": 97,
+      "CategoryName": "society.crime"
+  
+    },
+    {
+      "CategoryNumber": 98,
+      "CategoryName": "sports.martial_arts"
+  
+    },
+    {
+      "CategoryNumber": 99,
+      "CategoryName": "education.history"
+  
+    },
+    {
+      "CategoryNumber": 100,
+      "CategoryName": "adult.art"
+  
+    },
+    {
+      "CategoryNumber": 101,
+      "CategoryName": "adult.bodyart"
+  
+    },
+    {
+      "CategoryNumber": 102,
+      "CategoryName": "adult.games"
+  
+    },
+    {
+      "CategoryNumber": 103,
+      "CategoryName": "adult.lifestyles"
+  
+    },
+    {
+      "CategoryNumber": 104,
+      "CategoryName": "shopping.office_supplies"
+  
+    },
+    {
+      "CategoryNumber": 105,
+      "CategoryName": "expired"
+  
+    },
+    {
+      "CategoryNumber": 106,
+      "CategoryName": "world.pl"
+  
+    },
+    {
+      "CategoryNumber": 107,
+      "CategoryName": "world.cn"
+  
+    },
+    {
+      "CategoryNumber": 108,
+      "CategoryName": "world.kr"
+  
+    },
+    {
+      "CategoryNumber": 109,
+      "CategoryName": "porn.pl"
+  
+    },
+    {
+      "CategoryNumber": 110,
+      "CategoryName": "porn.ru"
+  
+    },
+    {
+      "CategoryNumber": 111,
+      "CategoryName": "porn.pt"
+  
+    },
+    {
+      "CategoryNumber": 112,
+      "CategoryName": "plagiarism"
+  
+    },
+    {
+      "CategoryNumber": 113,
+      "CategoryName": "parked"
+  
+    },
+    {
+      "CategoryNumber": 114,
+      "CategoryName": "suspicious.script"
+  
+    },
+    {
+      "CategoryNumber": 115,
+      "CategoryName": "business.construction"
+  
+    },
+    {
+      "CategoryNumber": 116,
+      "CategoryName": "security.nettools"
+  
+    },
+    {
+      "CategoryNumber": 117,
+      "CategoryName": "forums.social_networking"
+  
+    },
+    {
+      "CategoryNumber": 118,
+      "CategoryName": "forums.dating"
+  
+    },
+    {
+      "CategoryNumber": 119,
+      "CategoryName": "business.manufacturing"
+  
+    },
+    {
+      "CategoryNumber": 120,
+      "CategoryName": "G-Rated"
+  
+    },
+    {
+      "CategoryNumber": 121,
+      "CategoryName": "PG-Rated"
+  
+    },
+    {
+      "CategoryNumber": 122,
+      "CategoryName": "R-Rated"
+  
+    },
+    {
+      "CategoryNumber": 123,
+      "CategoryName": "X-Rated"
+  
+    },
+    {
+      "CategoryNumber": 124,
+      "CategoryName": "S-Rated"
+  
+    },
+    {
+      "CategoryNumber": 125,
+      "CategoryName": "security.potentially_unwanted_applications"
+  
+    },
+    {
+      "CategoryNumber": 126,
+      "CategoryName": "offensive"
+  
+    },
+    {
+      "CategoryNumber": 127,
+      "CategoryName": "computers.filehosting"
+  
+    },
+    {
+      "CategoryNumber": 128,
+      "CategoryName": "computers.consumer_electronics"
+  
+    },
+    {
+      "CategoryNumber": 129,
+      "CategoryName": "education.media"
+  
+    },
+    {
+      "CategoryNumber": 130,
+      "CategoryName": "security.virus_ignore"
+  
+    },
+    {
+      "CategoryNumber": 131,
+      "CategoryName": "entertainment.radio_and_tv"
+  
+    },
+    {
+      "CategoryNumber": 132,
+      "CategoryName": "photography"
+  
+    },
+    {
+      "CategoryNumber": 133,
+      "CategoryName": "security.shorteners"
+  
+    },
+    {
+      "CategoryNumber": 134,
+      "CategoryName": "security.malware"
+  
+    },
+    {
+      "CategoryNumber": 135,
+      "CategoryName": "security.translators"
+  
+    },
+    {
+      "CategoryNumber": 136,
+      "CategoryName": "computers.storage"
+  
+    },
+    {
+      "CategoryNumber": 137,
+      "CategoryName": "violence.extremism"
+  
+    },
+    {
+      "CategoryNumber": 138,
+      "CategoryName": "computers.analytics"
+  
+    },
+    {
+      "CategoryNumber": 139,
+      "CategoryName": "esports"
+  
+    },
+    {
+      "CategoryNumber": 140,
+      "CategoryName": "artificial-intelligence"
+  
+    },
+    {
+      "CategoryNumber": 141,
+      "CategoryName": "artificial-Intelligence.generative"
+  
+    },
+    {
+      "CategoryNumber": 142,
+      "CategoryName": "artificial-intelligence.detective"
+  
+    },
+    {
+      "CategoryNumber": 200,
+      "CategoryName": "facebook"
+  
+    },
+    {
+      "CategoryNumber": 201,
+      "CategoryName": "twitter"
+  
+    },
+    {
+      "CategoryNumber": 202,
+      "CategoryName": "instagram"
+  
+    },
+    {
+      "CategoryNumber": 203,
+      "CategoryName": "pinterest"
+  
+    },
+    {
+      "CategoryNumber": 900,
+      "CategoryName": "education.videos"
+  
+    }
+  ]
