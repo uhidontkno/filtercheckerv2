@@ -7,6 +7,7 @@ module.exports = config.bot({
    locations: {
        base: "src",
        output: "src", //If you are using bun, set "src" instead
-       commands: "commands"
+       commands: "commands",
+       events: "events"
    }
 });
