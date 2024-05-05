@@ -2,7 +2,9 @@ import { Declare, Command, type CommandContext } from 'seyfert';
 
 @Declare({
   name: 'ping',
-  description: 'Show the ping with discord'
+  description: 'Show the ping with discord',
+  contexts: ['BOT_DM', 'GUILD', 'PRIVATE_CHANNEL'],
+  integrationTypes: ['GUILD_INSTALL', 'USER_INSTALL']
 })
 export default class PingCommand extends Command {
 

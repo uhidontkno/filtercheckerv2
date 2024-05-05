@@ -23,7 +23,9 @@ import filters from "../modules/filters"
 )
 @Declare({
   name: 'check',
-  description: 'Check a link against various filters'
+  description: 'Check a link against various filters',
+  contexts: ['BOT_DM', 'GUILD', 'PRIVATE_CHANNEL'],
+  integrationTypes: ['GUILD_INSTALL', 'USER_INSTALL']
 })
 export default class FilterCheckCommand extends Command {
 
