@@ -1,6 +1,9 @@
 {
   "name": "filtercheckerv2",
   "module": "src/index.ts",
+  "scripts": {
+    "start": "bun run src/index.ts"
+  },
   "type": "module",
   "devDependencies": {
     "@types/bun": "latest"
