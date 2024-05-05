@@ -1,5 +1,10 @@
 [
     {
+        "CategoryNumber": -1,
+        "CategoryName": "not reviewed"
+    
+    },
+    {
       "CategoryNumber": 1,
       "CategoryName": "local-allow"
   
