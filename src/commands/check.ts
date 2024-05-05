@@ -1,5 +1,6 @@
 import { Declare, Command, type CommandContext, Options,
-    createStringOption, Embed} from 'seyfert';
+    createStringOption, Embed,
+    createBooleanOption} from 'seyfert';
 import { MessageFlags } from 'seyfert/lib/types';
 import filters from "../modules/filters"
 @Options(
@@ -19,6 +20,10 @@ import filters from "../modules/filters"
                     { name: 'Lightspeed', value: 'lightspeed' }
                   ]
               }),
+              show: createBooleanOption({
+                required:false,
+              description: "Show the results non-ephemerally",
+            }),
           }
 )
 @Declare({
@@ -40,7 +45,8 @@ export default class FilterCheckCommand extends Command {
     embed.setDescription("Loading...")
     await ctx.editOrReply({
         embeds:[embed],
-        flags:MessageFlags.Ephemeral
+        // @ts-ignore
+        flags:ctx.options.show ? undefined : MessageFlags.Ephemeral 
       });
       embed.setDescription("")
     embed.setColor('Blue')
