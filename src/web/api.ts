@@ -56,6 +56,35 @@ app.post("/check/:url/results.txt",async ({ params,body,set })=>{
         }
     }
 })
+app.post("/check/:url/results.json",async ({ params,body,set })=>{
+    let _:any = body
+    let bj = {"filter": "all"};
+    try {
+    bj = JSON.parse(_)
+    } catch {
+        set.status = 400;
+        return {"error":"Bad JSON"}
+    }
+
+    let url = params.url
+    if (bj.filter == "all") {
+    let url = params.url
+    let results = [await filters.fortiguard(url),await filters.lightspeed(url),await filters.palo(url)]
+    return {"fortiguard":results[0],"lightspeed":results[1],"paloalto":results[2]}
+    } else {
+        switch (bj.filter) {
+            case ("fortiguard" || "forti"):
+                return {"fortiguard":await filters.fortiguard(url)}
+            case ("lightspeed" || "ls"):
+                return {"lightspeed":await filters.lightspeed(url)}
+            case ("palo" || "paloalto") :
+                return {"palo":await filters.palo(url)}
+            default:
+                set.status = 400
+                return {"error":"Unknown filter. Accepted values: fortiguard, forti, lightspeed, ls, palo, paloalto"}
+        }
+    }
+})
 
 
 console.log(`Listening on port: ${process.argv[3] || process.env.PORT || 10000}`)
