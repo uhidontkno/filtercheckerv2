@@ -1,4 +1,4 @@
-<img align="right" src="readme/preview.png" height="200px"></img>
+<img align="right" src="readme/preview.png" height="270px"></img>
 # FilterChecker V2
 The most powerful unblocked link checker, supporting these filters:
 * Lightspeed Systems
