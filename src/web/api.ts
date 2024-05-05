@@ -86,6 +86,8 @@ app.post("/check/:url/results.json",async ({ params,body,set })=>{
     }
 })
 
-
-console.log(`Listening on port: ${process.argv[3] || process.env.PORT || 10000}`)
-app.listen(process.argv[3] || process.env.PORT || 10000)
+let port = 10000;
+if (process.env.PORT) {port = Number(process.env.PORT)}
+if (!isNaN(Number(process.argv[process.argv.length - 1]))) {port = Number(process.argv[process.argv.length - 1])}
+console.log(`Listening on port: ${port}`)
+app.listen(port)
