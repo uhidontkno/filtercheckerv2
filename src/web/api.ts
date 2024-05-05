@@ -15,6 +15,11 @@ app.get("/check/:url/results.txt",async ({ params })=>{
     return `FilterChecker Report for ${url}:\n\n${formatted.join("\n")}`
 })
 
+app.get("/check/:url/results.json",async ({ params })=>{
+    let url = params.url
+    let results = [await filters.fortiguard(url),await filters.lightspeed(url),await filters.palo(url)]
+    return {"fortiguard":results[0],"lightspeed":results[1],"paloalto":results[2]}
+});
 app.post("/check/:url/results.txt",async ({ params,body,set })=>{
     let _:any = body
     let bj = {"filter": "all"};
