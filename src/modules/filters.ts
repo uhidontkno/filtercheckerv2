@@ -1,3 +1,5 @@
+import cheerio from 'cheerio';
+
 // Lightspeed
 async function lightspeedCategorize(num: number) {
     let jFile:Blob = Bun.file("src/modules/lightspeed.json")
@@ -63,3 +65,15 @@ async function fortiguard(url:string) {
 }
 
 // Palo Alto
+
+async function palo(domain: string): Promise<any> {
+    try {
+        const res = await fetch(`https://urlfiltering.paloaltonetworks.com/single_cr/?url=${domain}`);
+        const html = await res.text();
+        const c = cheerio.load(html);
+        return [c(`*[for="id_new_category"]`).eq(2).parent().find(".form-text").text().trim(),c(`*[for="id_new_category"]`).eq(1).parent().find(".form-text").text().trim()]
+    } catch (error) {
+        console.error('Error fetching or parsing the HTML:', error);
+        return ''; // Return an empty string in case of error
+    }
+}
