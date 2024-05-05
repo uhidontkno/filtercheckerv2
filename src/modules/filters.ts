@@ -32,7 +32,7 @@ async function lightspeed(url:string) {
     );
     let body= await res.json();
     let cat = [body["data"]["a"]["cat"],body["data"]["b"]["cat"]]
-    return [lightspeedCategorize(cat[0]),lightspeedCategorize(cat[1])]
+    return [await lightspeedCategorize(cat[0]),await lightspeedCategorize(cat[1])]
 
 }
 
