@@ -4,8 +4,8 @@ import cheerio from 'cheerio';
 async function lightspeedCategorize(num: number) {
     let jFile:Blob = Bun.file("src/modules/lightspeed.json")
     let catJson = await jFile.json();
-    for (let i = 0; i > catJson.length;i++) {
-        if (catJson[i]["CategoryName"] == num) {
+    for (let i = 0; i < catJson.length;i++) {
+        if (catJson[i]["CategoryNumber"] == num) {
             return catJson[i]["CategoryName"]
         }
     }
@@ -27,7 +27,7 @@ async function lightspeed(url:string) {
                 'x-api-key': 'onEkoztnFpTi3VG7XQEq6skQWN3aFm3h'
             },
             // graphQL vvv
-            "body": `{"query":"\\nquery getDeviceCategorization($itemA: CustomHostLookupInput!, $itemB: CustomHostLookupInput!){\\n  a: custom_HostLookup(item: $itemA) { cat}\\n  b: custom_HostLookup(item: $itemB) { cat   \\n  }\\n}","variables":{"itemA":{"hostname":"{url}"}, "itemB":{"hostname":"{url}"}}}`
+            "body": `{"query":"\\nquery getDeviceCategorization($itemA: CustomHostLookupInput!, $itemB: CustomHostLookupInput!){\\n  a: custom_HostLookup(item: $itemA) { cat}\\n  b: custom_HostLookup(item: $itemB) { cat   \\n  }\\n}","variables":{"itemA":{"hostname":"${url}"}, "itemB":{"hostname":"${url}"}}}`
         }
     );
     let body= await res.json();
