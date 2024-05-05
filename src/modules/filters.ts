@@ -33,3 +33,33 @@ async function lightspeed(url:string) {
     return [lightspeedCategorize(cat[0]),lightspeedCategorize(cat[1])]
 
 }
+
+// FortiGuard
+async function fortiguard(url:string) {
+    let res = await fetch("https://www.fortiguard.com/learnmore/dns",{
+        "method":"POST",
+        "headers": {
+            'accept':
+            '*/*',
+            'accept-language':
+            'en-US,en;q=0.9',
+            'authority':
+            'www.fortiguard.com',
+            'content-type':
+            'application/json;charset=UTF-8',
+            'cookie':
+            'cookiesession1=678A3E0F33B3CB9D7BEECD2B8A5DD036; privacy_agreement=true',
+            'origin':
+            'https://www.fortiguard.com',
+            'referer':
+            'https://www.fortiguard.com/services/sdns',
+            'user-agent':
+            'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
+        },
+        "body": `{{"value": "${url}", "version": 9}}`
+    })
+    let rJson = await res.json();
+    return rJson["dns"]["categoryname"]
+}
+
+// Palo Alto
