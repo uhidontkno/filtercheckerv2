@@ -37,7 +37,7 @@ export default class FilterCheckCommand extends Command {
   async run(ctx: CommandContext) {
     const re = new RegExp("^(?:https?:\/\/)?(?:www\.)?([^\/]+)");
     // @ts-ignore
-    let url = re.exec(ctx.options.url)[0];
+    let url = re.exec(ctx.options.url)[1];
     
     const embed = new Embed();
     embed.setColor('Green')
