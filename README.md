@@ -27,7 +27,7 @@ Assuming you already cloned the repo, and installed [Bun](https://bun.sh):
 
 ----
 
-**GET/POST** `/request/[url]/results.txt`: 
+**GET/POST** `/check/[url]/results.txt`: 
 * If a GET request was made, it will show a FilterChecker report of all filters
 * If a POST reqest was made, you'll have an option to specify what filter in a JSON format, the options are:
   * `lightspeed` or `ls` for Lightspeed
@@ -64,7 +64,7 @@ Category: Streaming-Media
 
 ----
 
-**GET/POST** `/request/[url]/results.json`: 
+**GET/POST** `/check/[url]/results.json`: 
 * If a GET request was made, it will show a FilterChecker report of all filters in a JSON format.
 
 * If a POST reqest was made, you'll have an option to specify what filter in a JSON format, the options are:
