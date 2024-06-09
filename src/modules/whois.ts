@@ -1,3 +1,5 @@
+import ipRangeCheck from 'ip-range-check';
+
 export async function getRDAP(ipv4Address: string): Promise<string | null> {
     try {
         const response = await fetch('https://data.iana.org/rdap/ipv4.json');
@@ -6,20 +8,18 @@ export async function getRDAP(ipv4Address: string): Promise<string | null> {
         }
         
         const rdapData = await response.json();
-        const ipv4Services: Array<Array<string | Array<string>>> = rdapData.services;
+        const ipv4Services: Array<Array<any>> = rdapData.services;
         
         for (const service of ipv4Services) {
             const cidrRanges: Array<string> = service[0] as Array<string>;
             const endpoints: Array<string> = service[1] as Array<string>;
             
-            for (let i = 0; i < cidrRanges.length; i++) {
-                const cidrRange = cidrRanges[i];
-                if (ipv4Address.startsWith(cidrRange)) {
-                    return endpoints[0]; // should be https
-                }
+            if (ipRangeCheck(ipv4Address, cidrRanges)) {
+                return endpoints[0]; // usually https
             }
         }
-        return null; 
+        
+        return null;
     } catch (error) {
         console.error('Error fetching RDAP data:', error);
         return null;
